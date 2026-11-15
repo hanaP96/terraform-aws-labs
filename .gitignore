@@ -1,0 +1,61 @@
+
+# ==========================================
+# TERRAFORM
+# ==========================================
+
+# Terraform working directory
+.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Terraform plan files
+*.tfplan
+*.plan
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Terraform variable files
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Local override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform CLI configuration
+.terraformrc
+terraform.rc
+
+# ==========================================
+# AWS CREDENTIALS & SECRETS
+# ==========================================
+
+.env
+.env.*
+!.env.example
+
+.aws/
+credentials
+config
+
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ==========================================
+# IDE & MACOS
+# ==========================================
+
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
